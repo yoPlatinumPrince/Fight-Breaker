@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: fight-breaker
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 10000
